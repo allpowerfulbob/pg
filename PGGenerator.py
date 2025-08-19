@@ -17,11 +17,11 @@ characterlist = ""
 
 # Getting the character list for the password
 while(True):
-    choice = int(input("Enter your choice (1-5): "))
+    choice = int(input("Enter your choice (1-5) (We strongly recommend 5): "))
     if (choice == 1):
         characterlist += string.ascii_uppercase
     elif (choice == 2):
-        chacterlist += string.ascii_lowercase
+        characterlist += string.ascii_lowercase
     elif (choice == 3):
         characterlist += string.digits
     elif (choice == 4):
@@ -43,3 +43,4 @@ while(True):
 
     # Printing the generated password
     print("Your randomly generated password is: " + "".join(password))
+    break
